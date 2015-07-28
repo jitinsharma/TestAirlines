@@ -1,0 +1,189 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card_view:contentPaddingLeft="10dp"
+    card_view:contentPaddingRight="10dp"
+    card_view:contentPaddingTop="10dp"
+    card_view:contentPaddingBottom="10dp"
+    card_view:cardElevation="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/header"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:fontFamily="sans-serif-light"
+                android:text="  Book a flight"
+                android:textSize="20sp"
+                android:background="@color/Red"/>
+
+            <RadioButton
+                android:id="@+id/oneWay"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:text="One Way"/>
+
+            <RadioButton
+                android:id="@+id/returnWay"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:layout_toRightOf="@+id/oneWay"
+                android:text="Return"/>
+
+            <RadioButton
+                android:id="@+id/multiCity"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:layout_toRightOf="@+id/returnWay"
+                android:text="Multi City"/>
+
+            <Button
+                android:id="@+id/fromBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/oneWay"
+                android:layout_alignLeft="@+id/centerBtn"
+                android:background="@android:color/transparent"
+                android:text="From"/>
+
+            <Button
+                android:id="@+id/toBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/oneWay"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:text="To"/>
+
+            <Button
+                android:id="@+id/centerBtn"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@+id/oneWay"
+                android:background="@drawable/flight_switch"
+                android:layout_centerHorizontal="true"/>
+
+            <View
+                android:id="@+id/dividerHorizontalLine"
+                android:layout_below="@+id/centerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/LightGrey"/>
+
+            <RelativeLayout
+                android:layout_below="@id/dividerHorizontalLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/multiCity1">
+                </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/dateLayout"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dividerHorizontalLine">
+
+                <RelativeLayout
+                    android:id="@+id/onwardDateLayout"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content">
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Depart"
+                        android:id="@+id/onwardHeader"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="21"
+                        android:layout_below="@+id/onwardHeader"
+                        android:id="@+id/onwardDate"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:paddingRight="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="Mar"
+                        android:layout_below="@+id/onwardHeader"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/onwardMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_toRightOf="@+id/onwardDate"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/returnDateLayout"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content">
+                    <TextView
+                        android:paddingRight="20dp"
+                        android:paddingTop="20dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Return"
+                        android:textSize="20sp"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/returnHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:paddingLeft="20dp"
+                        android:paddingTop="20dp"
+                        android:text="28"
+                        android:id="@+id/returnDate"
+                        android:layout_below="@+id/returnHeader"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/returnMonth"/>
+
+                    <TextView
+                        android:paddingRight="20dp"
+                        android:paddingTop="20dp"
+                        android:text="Mar"
+                        android:layout_below="@+id/returnHeader"
+                        android:id="@+id/returnMonth"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <Spinner
+                android:layout_below="@+id/dateLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                </Spinner>
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>

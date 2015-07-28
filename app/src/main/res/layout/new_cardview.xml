@@ -1,0 +1,125 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card_view:contentPaddingLeft="10dp"
+    card_view:contentPaddingRight="10dp"
+    card_view:contentPaddingTop="10dp"
+    card_view:contentPaddingBottom="10dp"
+    card_view:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/header"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:fontFamily="sans-serif-light"
+            android:text="  Book a flight"
+            android:textSize="20sp"
+            android:background="@color/Red"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TableRow
+        android:id="@+id/firstRow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/fromBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/transparent"
+            android:text="From"/>
+
+        <Button
+            android:id="@+id/centerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:background="@drawable/flight_switch"
+            android:layout_centerHorizontal="true"/>
+
+
+        <Button
+            android:id="@+id/toBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:text="To"/>
+
+    </TableRow>
+
+        <TableRow
+            android:id="@+id/secondRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+            <RelativeLayout
+                android:id="@+id/customButtonLayout"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+            <TextView
+                android:text="First"
+                android:id="@+id/firstTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="#000"/>
+            <TextView
+                android:textColor="#000"
+                android:text="Second"
+                android:layout_height="wrap_content"
+                android:id="@+id/secondTextView"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/returnDate"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+                <TextView
+                    android:text="First"
+                    android:id="@+id/returnDateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"/>
+                <TextView
+                    android:textColor="#000"
+                    android:text="Second"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/returnMonthText"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"/>
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+

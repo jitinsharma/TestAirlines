@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hiddenSecond"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/hiddenCenterBtn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_toRightOf="@+id/hiddenFromBtn"
+        android:background="@drawable/flight_switch"/>
+
+    <Button
+        android:id="@+id/hiddenFromBtn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:text="From"/>
+
+    <Button
+        android:id="@+id/hiddenToBtn"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/hiddenCenterBtn"
+        android:background="@android:color/transparent"
+        android:text="To"/>
+
+    <ImageView
+        android:id="@+id/hiddenImage"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/hiddenToBtn"
+        android:paddingBottom="20dp"
+        android:background="@drawable/ic_event_grey600_36dp"/>
+
+    <TextView
+        android:paddingTop="20dp"
+        android:text="28"
+        android:id="@+id/hiddenDate"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/hiddenImage"/>
+
+    <TextView
+        android:paddingTop="20dp"
+        android:text="Mar"
+        android:id="@+id/hiddenMonth"
+        android:layout_toRightOf="@+id/hiddenDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/multiFirstDividerHorizontalLine"
+        android:layout_below="@+id/hiddenImage"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/LightGrey"/>
+</RelativeLayout>

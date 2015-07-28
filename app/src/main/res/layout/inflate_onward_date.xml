@@ -1,0 +1,38 @@
+<RelativeLayout
+    android:id="@+id/inflateOnwardDateLayout"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Depart"
+        android:id="@+id/onwardHeader"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:text="21"
+        android:layout_below="@+id/onwardHeader"
+        android:id="@+id/onwardDate"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:text="Mar"
+        android:layout_below="@+id/onwardHeader"
+        android:layout_height="wrap_content"
+        android:id="@+id/onwardMonth"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/onwardDate"/>
+    </RelativeLayout>
