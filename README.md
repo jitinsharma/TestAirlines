@@ -1,6 +1,13 @@
 # TestAirlines
 
-A UI mockup for a sample app for travel purposes.
-A completely native app using material design philosophy.
+A UI mockup for a sample native android app
 
-*build with gradle
+Concepts learned
+- Recyclerview and adapter
+- [Ripple library](https://github.com/traex/RippleEffect)
+- Data models
+- View pagers
+- Transitions
+
+## Installation
+Import in android studio
